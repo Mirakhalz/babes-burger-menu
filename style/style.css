@@ -83,7 +83,5 @@ nav, a{
     text-decoration: none;
 }
 footer{
-    display: grid;
-    align-self: center;
-    align-items: center;
+    margin-bottom: 60px;
 }
