@@ -73,7 +73,7 @@ article{
 .caption{
     color:rgb(34, 34, 34);
     display: inline-block;
-    font-size: 14px;
+    font-size: .75;
     padding: 20px;
     text-align: justify;
     width: 250px;
@@ -88,7 +88,7 @@ h1{
 
 .price{
     color: grey;
-    font-size: 22px;
+    font-size: 2vw;
 }
 
 /** Nav, Icon, Buttons **/
@@ -97,14 +97,14 @@ nav, a{
     align-items: center;
     color: black;
     display: grid;
-    font-size: 18px;
+    font-size: 100%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     text-decoration: underline;
 }
 
 i{
     align-self: center;
-    font-size: 22px;
+    font-size: 1.6vw;
 }
 .burger button{
     background-color:rgb(50, 50, 50);
@@ -148,5 +148,4 @@ footer{
 
 .smallLogo{
     width: 110px;
-
 }
