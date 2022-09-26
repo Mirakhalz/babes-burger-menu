@@ -1,3 +1,5 @@
+/** Base Style **/
+
 *{
     margin: 0px;
     padding: 0px;
@@ -12,26 +14,13 @@ body{
     text-align: center;
 }
 
+/** Logo, Images **/
+
 #logo{
     display: grid;
     margin: 0 auto 0 auto;
-    width: 100%;
     max-width: 450px;
-}
-
-.slogan{
-    font-size: 2vw;
-    margin-top: 0px;
-}
-
-#list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    column-gap: 20px;
-    row-gap: 20px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    
+    width: 100%;
 }
 
 img{
@@ -42,16 +31,43 @@ img{
     width: 250px;
 }
 
-article:hover{
-    transform: scale(1.1);
-}
-a:hover{
-    transform: scale(1.1);
+/** Containers/Grids **/
+
+#list{
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
-.burger, .rows{
+.rows{
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.burger{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+article{
+    background-color: rgb(205, 205, 205);
+}
+
+/** Content **/
+
+.slogan{
+    font-size: 2vw;
+    margin-top: 0px;
 }
 
 .caption{
@@ -63,25 +79,74 @@ a:hover{
     width: 250px;
 }
 
-.burger{
-    font-weight: bold;
-    margin-top: 20px;
-}
-
 h1{
     font-size: 44px;
     font-weight: bold;
     margin-top: 80px;
+    text-decoration: underline;
 }
+
+.price{
+    color: grey;
+    font-size: 22px;
+}
+
+/** Nav, Icon, Buttons **/
 
 nav, a{
     align-items: center;
     color: black;
     display: grid;
     font-size: 18px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    text-decoration: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-decoration: underline;
 }
+
+i{
+    align-self: center;
+    font-size: 22px;
+}
+.burger button{
+    background-color:rgb(50, 50, 50);
+    border: none;
+    border-radius: 10px;
+    color:whitesmoke;
+    cursor: grabbing;
+    font-size: 18px;
+    outline: 0;
+    padding: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+/** Hover **/
+
+a:hover{
+    transform: scale(1.1);
+}
+
+article:hover{
+    background-color: rgb(219, 202, 157);
+    transform: scale(1.1);
+    opacity: 1.7;
+}
+
+.burger button:hover{
+    opacity: 0.7;
+}
+
+i:hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+/** Footer **/
+
 footer{
     margin-bottom: 60px;
+}
+
+.smallLogo{
+    width: 110px;
+
 }
