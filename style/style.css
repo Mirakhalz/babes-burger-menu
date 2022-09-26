@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    background-color: whitesmoke;
+}    
+
+body{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+#logo{
+    display: grid;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    max-width: 450px;
+}
+
+.slogan{
+    font-size: 2vw;
+    margin-top: 0px;
+}
+
+#list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+
+img{
+    border-radius: 10px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
+    margin-bottom: 20px;
+    margin-top: 50px;
+    width: 250px;
+}
+
+article:hover{
+    transform: scale(1.1);
+}
+a:hover{
+    transform: scale(1.1);
+}
+
+.burger, .rows{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.caption{
+    color:rgb(34, 34, 34);
+    display: inline-block;
+    font-size: 14px;
+    padding: 20px;
+    text-align: justify;
+    width: 250px;
+}
+
+.burger{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+nav, a{
+    align-items: center;
+    color: black;
+    display: grid;
+    font-size: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-decoration: none;
+}
+footer{
+    display: grid;
+    align-self: center;
+    align-items: center;
+}
